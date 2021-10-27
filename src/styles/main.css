@@ -83,14 +83,14 @@ body {
     display: flex;
     align-items: center;
     min-height: 380px;
-    min-width: 1000px;
     width: 100%;
     text-align: center;
     background-image: url('../public/images/heros/hero-image_2.jpg');
+    background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: green;
+    background-color: rgb(73, 73, 73);
 }
 
 .hero_inner {
@@ -99,14 +99,14 @@ body {
 }
 
 .hero_title {
-    color: #000;
+    color: #fff;
     font-weight: 500;
     font-size: 36px;
 }
 
 .hero_tag {
-    color: #000;
+    color: #fff;
     margin-top: 16px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
