@@ -21,45 +21,49 @@ body {
 
 /*header*/
 
-.header {
+header {
     min-height: 56px;
     transition: min-height 0.3s;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .header_inner {
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
 .header_title {
     font-weight: 300;
-    font-size: 4em;
+    font-size: 2em;
     margin: 0.5em 0.25em;
     display: inline-block;
     color: #212121;
 }
 
-/*navigation*/
-
-.nav {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.header_menu {
+    font-size: 32px;
+    margin: 10px 0 10px 5px;
+    display: block;
+    text-align: end;
+    width: auto;
 }
 
+/*navigation*/
+
 .nav_list {
-    width: 100%;
     padding: 0;
     margin: 0;
 }
 
 .nav_item {
-    box-sizing: border-box;
     display: inline-block;
-    width: 24%;
     text-align: center;
     line-height: 24px;
     text-transform: uppercase;
@@ -84,13 +88,15 @@ body {
     align-items: center;
     min-height: 380px;
     width: 100%;
+    margin-top: 10px;
     text-align: center;
-    background-image: url('../public/images/heros/hero-image_2.jpg');
     background-blend-mode: soft-light;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(73, 73, 73);
+    background: url('../public/images/heros/hero-image_2.jpg') rgb(73, 73, 73) no-repeat center/cover;
+    cursor: pointer;
+}
+
+.hero:hover {
+    background-size: 120%;
 }
 
 .hero_inner {
