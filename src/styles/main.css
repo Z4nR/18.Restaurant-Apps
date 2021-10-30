@@ -86,6 +86,7 @@ header {
 .hero {
     display: flex;
     align-items: center;
+    transition: 0.5s;
     min-height: 380px;
     width: 100%;
     margin-top: 10px;
@@ -115,4 +116,83 @@ header {
     margin-top: 16px;
     font-size: 18px;
     font-weight: 400;
+}
+
+/* content */
+
+.content {
+    padding: 32px;
+}
+
+/* resto tagline */
+
+.resto_list {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.explore_resto {
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.explore_resto::after {
+    content: '';
+    margin-top: 16px;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* resto list container */
+
+.resto {
+    margin: 32px auto auto;
+    text-align: left;
+    overflow: auto;
+}
+
+/* resto item */
+
+.resto-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.resto-detail {
+    padding: 16px;
+}
+
+.img-container {
+    height: auto;
+    width: auto;
+}
+
+.resto-location {
+    position: absolute;
+}
+
+.resto-img {
+    width: 100%;
+}
+
+.resto-name {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+    transition: 0.3s opacity;
+}
+
+.resto-rating {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.resto-desc {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.5em;
 }
