@@ -13,9 +13,9 @@ class RestoList extends HTMLElement {
 
   render () {
     this.shadowDOM.innerHTML = ''
-    this._restaurants.forEach(resto => {
+    this._restaurants.forEach(restaurants => {
       const restoItems = document.createElement('resto-item')
-      restoItems.restaurant = resto
+      restoItems.restaurant = restaurants
       this.shadowDOM.appendChild(restoItems)
     })
   }
