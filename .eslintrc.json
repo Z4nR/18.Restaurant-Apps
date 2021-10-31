@@ -11,6 +11,9 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-undef":"off"
+        "no-undef":"off",
+        "accessor-pairs": "off",
+        "no-async-promise-executor": "off",
+        "prefer-promise-reject-errors": "off"
     }
 }
