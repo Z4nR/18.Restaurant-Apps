@@ -13,10 +13,12 @@ class RestoList extends HTMLElement {
 
   render () {
     this.shadowDOM.innerHTML = ''
-    this._restaurants.array.forEach(resto => {
-      
-    });
+    this._restaurants.forEach(resto => {
+      const restoItems = document.createElement('resto-item')
+      restoItems.restaurant = resto
+      this.shadowDOM.appendChild(restoItems)
+    })
   }
 }
 
-customElements.define('resto', RestoList)
+customElements.define('resto-list', RestoList)

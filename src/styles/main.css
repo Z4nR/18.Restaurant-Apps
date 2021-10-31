@@ -146,7 +146,7 @@ header {
 
 /* resto list container */
 
-resto {
+resto-list {
     margin: 32px auto auto;
     text-align: left;
     overflow: auto;
