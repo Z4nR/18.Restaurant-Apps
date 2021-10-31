@@ -1,4 +1,4 @@
-import restaurants from './DATA.json'
+const restaurants = require('../../DATA.json')
 
 class DataSource {
   static getRestoData () {

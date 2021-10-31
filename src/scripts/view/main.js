@@ -1,5 +1,5 @@
-import '../scripts/component/resto-list'
-import DataSource from '../scripts/data/data-source'
+import '../component/resto-list'
+import DataSource from '../data/data-source'
 
 const main = () => {
   const restoList = document.querySelector('resto')
