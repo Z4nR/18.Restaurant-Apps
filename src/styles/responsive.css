@@ -88,9 +88,9 @@ resto-list {
 }
 
 @media screen and (min-width: 900px){
-    .resto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    resto-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

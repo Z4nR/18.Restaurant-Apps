@@ -7,12 +7,13 @@ class RestoList extends HTMLElement {
   }
 
   set restaurants (restaurants) {
-    this._restaurants = restaurants
+    this._restaurants = [...restaurants.restaurants]
     this.render()
   }
 
   render () {
     this.shadowDOM.innerHTML = ''
+    console.log(this._restaurants)
     this._restaurants.forEach(restaurants => {
       const restoItems = document.createElement('resto-item')
       restoItems.restaurant = restaurants
