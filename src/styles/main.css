@@ -152,51 +152,6 @@ resto-list {
     overflow: auto;
 }
 
-/* resto item */
-
-.resto-box {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.resto-detail {
-    padding: 16px;
-}
-
-.img-container {
-    height: auto;
-    width: auto;
-}
-
-.resto-location {
-    position: absolute;
-}
-
-.resto-img {
-    width: 100%;
-}
-
-.resto-name {
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 16px;
-    transition: 0.3s opacity;
-}
-
-.resto-rating {
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #999;
-}
-
-.resto-desc {
-    margin-top: 16px;
-    font-size: 12px;
-    line-height: 1.5em;
-}
-
 /* footer */
 
 footer {

@@ -56,21 +56,6 @@ resto-list {
     }
 }
 
-@media screen and (min-width: 650px) {
-
-    .resto-detail {
-        padding: 16px 32px 32px 32px;
-    }
-
-    .resto-name {
-        font-size: 18px;
-    }
-
-    .resto-desc {
-        font-size: 14px;
-    }
-}
-
 @media screen and (min-width: 700px) {
     resto-list {
         display: grid;
