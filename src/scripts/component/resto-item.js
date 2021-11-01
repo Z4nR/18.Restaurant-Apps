@@ -29,11 +29,11 @@ class RestoItem extends HTMLElement {
       }
 
       .resto-location {
-        font-size: 10px;
+        font-size: 12px;
         padding: 10px;
         border-radius: 5px;
         position: absolute;
-        margin: 205px 0 0 10px;
+        margin: 205px 0 0 13px;
         background-color: white;
       }
 
@@ -51,14 +51,13 @@ class RestoItem extends HTMLElement {
       }
 
       .resto-rating {
-        font-size: 15px;
-        text-transform: uppercase;
+        font-size: 13px;
         color: #999;
       }
 
       .resto-desc {
         margin-top: 16px;
-        font-size: 12px;
+        font-size: 13px;
         text-align: justify;
         line-height: 1.5em;
       }
@@ -85,7 +84,7 @@ class RestoItem extends HTMLElement {
     </div>
     <div class="resto-detail">
       <p class="resto-name">${this._restaurant.name}</p>
-      <p class="resto-rating">${this._restaurant.rating}</p>
+      <p class="resto-rating">Rating : ${this._restaurant.rating}</p>
       <p class="resto-desc">${this._restaurant.description}</p>
     </div>`
   }
