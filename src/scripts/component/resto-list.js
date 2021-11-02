@@ -8,11 +8,12 @@ class RestoList extends HTMLElement {
 
   set restaurants (restaurants) {
     this._restaurants = [...restaurants.restaurants]
+    console.log(restaurants)
     this.render()
   }
 
   get value () {
-    return this.querySelector('#listCocktail').value
+    return this.querySelector('#listResto').value
   }
 
   renderError (message) {
@@ -32,7 +33,6 @@ class RestoList extends HTMLElement {
 
   render () {
     this.shadowDOM.innerHTML = ''
-    console.log(this._restaurants)
     this._restaurants.forEach(restaurants => {
       const restoItems = document.createElement('resto-item')
       restoItems.restaurant = restaurants

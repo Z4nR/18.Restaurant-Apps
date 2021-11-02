@@ -6,7 +6,7 @@ const main = () => {
   const restoList = document.querySelector('resto-list')
   const searchCafe = document.querySelector('search-box')
 
-  const renderResult = ({ result }) => {
+  const renderResult = (result) => {
     restoList.restaurants = result
   }
 
@@ -17,7 +17,8 @@ const main = () => {
   const onButtonSearchClicked = async () => {
     try {
       const result = DataSource.getSearchData(searchCafe.value)
-      renderResult({ restaurants: { restaurant: result } })
+      renderResult({ restaurants: result })
+      console.log(result)
     } catch (message) {
       fallbackResult(message)
     }
