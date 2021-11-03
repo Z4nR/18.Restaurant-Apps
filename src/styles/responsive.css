@@ -44,6 +44,16 @@ resto-list {
     }
 }
 
+@media screen and (min-width: 455px) {
+    .about_us_content {
+        padding: 16px 16px;
+    }
+
+    .about_us_description {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 520px) {
     .header_menu {
         display: none;
@@ -53,6 +63,13 @@ resto-list {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .about_us_content {
+        margin: 0 auto;
+        max-width: 650px;
     }
 }
 
@@ -73,6 +90,15 @@ resto-list {
 }
 
 @media screen and (min-width: 900px){
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about_us_content {
+        padding: 16px 32px;
+    }
+
     resto-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

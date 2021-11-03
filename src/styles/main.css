@@ -144,6 +144,14 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
+/* resto list container */
+
+resto-list {
+    margin: 32px auto auto;
+    text-align: left;
+    overflow: auto;
+}
+
 /* about us */
 
 .about-us {
@@ -170,12 +178,32 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
-/* resto list container */
+.about_us_figure {
+    width: 100%;
+}
 
-resto-list {
-    margin: 32px auto auto;
-    text-align: left;
-    overflow: auto;
+.about_us_figure img {
+    width: 100%;
+}
+
+.about_us_figure figcaption {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.about_us_content {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.about_us_description {
+    text-align: justify;
+    font-size: 12px;
+    margin-top: 12px;
+    color: #fff;
 }
 
 /* footer */
