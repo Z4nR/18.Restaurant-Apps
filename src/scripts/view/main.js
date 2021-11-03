@@ -21,6 +21,7 @@ const main = () => {
       console.log(result)
     } catch (message) {
       fallbackResult(message)
+      console.log(message)
     }
   }
 

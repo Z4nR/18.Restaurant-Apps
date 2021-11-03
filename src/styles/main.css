@@ -144,6 +144,32 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
+/* about us */
+
+.about-us {
+    padding: 32px;
+    background-color: #2c3e50;
+}
+
+.about {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.about-us-teks {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.about-us-teks::after {
+    content: '';
+    margin-top: 16px;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
 /* resto list container */
 
 resto-list {
