@@ -16,7 +16,7 @@ const main = () => {
 
   const onButtonSearchClicked = async () => {
     try {
-      const result = DataSource.getSearchData(searchCafe.value)
+      const result = await DataSource.getSearchData(searchCafe.value)
       renderResult({ restaurants: result })
       console.log(result)
     } catch (message) {
