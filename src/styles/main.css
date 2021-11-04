@@ -191,9 +191,10 @@ resto-list {
 
 .about_us_figure figcaption {
     text-align: center;
-    color: #fff;
+    color: darkgray;
     font-size: 13px;
     font-weight: 400;
+    font-style: italic;
     margin-top: 8px;
 }
 

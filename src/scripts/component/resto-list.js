@@ -1,11 +1,6 @@
 import './resto-item'
 
 class RestoList extends HTMLElement {
-  constructor () {
-    super()
-    this.shadowDOM = this.attachShadow({ mode: 'open' })
-  }
-
   set restaurants (restaurants) {
     this._restaurants = [...restaurants.restaurants]
     console.log(restaurants)
@@ -17,7 +12,7 @@ class RestoList extends HTMLElement {
   }
 
   renderError (message) {
-    this.shadowDOM.innerHTML = `
+    this.innerHTML = `
       <style>
         resto-list > .placeholder {
           font-weight: lighter;
@@ -28,15 +23,15 @@ class RestoList extends HTMLElement {
           user-select: none;
         }
       </style>`
-    this.shadowDOM.innerHTML += `<h2 class="placeholder">${message}</h2>`
+    this.innerHTML += `<h2 class="placeholder">${message}</h2>`
   }
 
   render () {
-    this.shadowDOM.innerHTML = ''
+    this.innerHTML = ''
     this._restaurants.forEach(restaurants => {
       const restoItems = document.createElement('resto-item')
       restoItems.restaurant = restaurants
-      this.shadowDOM.appendChild(restoItems)
+      this.appendChild(restoItems)
     })
   }
 }

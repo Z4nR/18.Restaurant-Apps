@@ -1,18 +1,13 @@
 class RestoItem extends HTMLElement {
-  constructor () {
-    super()
-    this.shadowDOM = this.attachShadow({ mode: 'open' })
-  }
-
   set restaurant (restaurant) {
     this._restaurant = restaurant
     this.render()
   }
 
   render () {
-    this.shadowDOM.innerHTML = `
+    this.innerHTML = `
     <style>
-      :host {
+      resto-item {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         width: 100%;
         border-radius: 5px;

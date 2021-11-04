@@ -39,9 +39,6 @@ class SearchBar extends HTMLElement {
           outline: 0;
           border-bottom: 2px solid #2c3e50;
         }
-        .search > input:focus::placeholder {
-          font-weight: bold;
-        }
         .search > input::placeholder {
           color: #2c3e50;
           font-weight: normal;
@@ -65,7 +62,7 @@ class SearchBar extends HTMLElement {
         }
       </style>
       <div class="search">
-        <input placeholder="Search The Cafe Name" id="searchElement" type="search">
+        <input placeholder="Search Resto Name" id="searchElement" type="search">
         <button id="searchButtonElement" type="submit">Search</button>
       </div>`
     this.shadowDOM.querySelector('#searchButtonElement').addEventListener('click', this._clickEvent)
