@@ -25,7 +25,7 @@ header {
     min-height: 56px;
     transition: min-height 0.3s;
     padding: 16px;
-    background-color: white;
+    background-color: #247291;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
@@ -44,7 +44,7 @@ header {
     font-size: 2em;
     margin: 0.5em 0.25em;
     display: inline-block;
-    color: #212121;
+    color: #f8da5b;
 }
 
 .header_menu {
@@ -56,6 +56,11 @@ header {
 }
 
 /*navigation*/
+
+#menu {
+    text-decoration: none;
+    color: #f8da5b;
+}
 
 .nav_list {
     padding: 0;
@@ -73,12 +78,12 @@ header {
     display: inline-block;
     padding: 1.3em;
     text-decoration: none;
-    color: #616161;
+    color: #f8da5b;
 }
 
 .nav a:hover {
     text-decoration: underline;
-    color: #000;
+    color: #fff;
 }
 
 /* jumbotron */
@@ -157,7 +162,7 @@ resto-list {
 .about-us {
     padding: 32px;
     transition: 0.5s;
-    background-color: #2c3e50;
+    background-color: #247291;
 }
 
 .about {
@@ -213,7 +218,7 @@ resto-list {
 /* footer */
 
 footer {
-    background-color: #2c3e50;
+    background-color: #247291;
     padding: 2em;
     width: 100%;
     text-align: center;
@@ -237,6 +242,10 @@ footer a {
     padding: 1.3em;
     text-decoration: none;
     color: #fff
+}
+
+footer a:hover {
+    color: #f8da5b;
 }
 
 footer i {

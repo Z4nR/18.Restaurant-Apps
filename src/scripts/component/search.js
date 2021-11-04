@@ -33,14 +33,14 @@ class SearchBar extends HTMLElement {
           width: 75%;
           padding: 4px;
           border: 0;
-          border-bottom: 1px solid #2c3e50;
+          border-bottom: 1px solid #f8da5b;
         }
         .search > input:focus {
           outline: 0;
-          border-bottom: 2px solid #2c3e50;
+          border-bottom: 2px solid #247291;
         }
         .search > input::placeholder {
-          color: #2c3e50;
+          color: #247291;
           font-weight: normal;
         }
         .search > button {
@@ -48,15 +48,15 @@ class SearchBar extends HTMLElement {
           cursor: pointer;
           margin-left: auto;
           padding: 4px;
-          background-color: #2c3e50;
-          color: white;
+          background-color: #f8da5b;
+          color: #247291;
           border-radius: 3px;
           border: 0;
         }
 
         @media screen and (min-width: 520px) {
           .search {
-            border : 1px solid #2c3e50;
+            border : 1px solid #f8da5b;
             border-radius: 5px;
           }
         }
