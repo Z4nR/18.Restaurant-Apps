@@ -75,9 +75,9 @@ class RestoItem extends HTMLElement {
     </style>
     <div class="img-container">
       <p class="resto-location">${this._restaurant.city}</p>
-      <img src="${this._restaurant.pictureId}" alt="Restaurant Rekomendasi" class="resto-img">
+      <img src="${this._restaurant.pictureId}" alt="${this._restaurant.name} image" class="resto-img">
     </div>
-    <div class="resto-detail">
+    <div aria-label="resto detail" class="resto-detail">
       <p class="resto-name">${this._restaurant.name}</p>
       <p class="resto-rating">Rating : ${this._restaurant.rating}</p>
       <p class="resto-desc">${this._restaurant.description}</p>

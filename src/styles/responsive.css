@@ -25,6 +25,7 @@ resto-list {
         /* This trasform moves the drawer off canvas. */
         -webkit-transform: translate(-320px, 0);
         transform: translate(-320px, 0);
+        visibility: hidden;
 
         /* Optionally, we animate the drawer. */
         transition: transform 0.3s ease;
@@ -33,6 +34,7 @@ resto-list {
     .open {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
+        visibility: visible;
     }
 
     .nav_item {

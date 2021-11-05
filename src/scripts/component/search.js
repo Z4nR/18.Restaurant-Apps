@@ -66,8 +66,8 @@ class SearchBar extends HTMLElement {
         }
       </style>
       <div class="search">
-        <input placeholder="Search Resto Name" id="searchElement" type="search">
-        <button id="searchButtonElement" type="submit">Search</button>
+        <input aria-label="Search Form" placeholder="Search Resto Name" id="searchElement" type="search">
+        <button aria-label="Search Button" id="searchButtonElement" type="submit">Search</button>
       </div>`
     this.shadowDOM.querySelector('#searchButtonElement').addEventListener('click', this._clickEvent)
   }
