@@ -42,6 +42,10 @@ resto-list {
         width: 100%;
         text-align: left;
     }
+
+    .nav_item a {
+        color: #247291;
+    }
 }
 
 @media screen and (min-width: 455px) {

@@ -19,6 +19,22 @@ body {
     color: #424242;
 }
 
+/* skip to content */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+ }
+
+ .skip-link:focus {
+    top: 0;
+ }
+
 /*header*/
 
 header {

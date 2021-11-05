@@ -30,6 +30,8 @@ class SearchBar extends HTMLElement {
           display: flex;
         }
         .search > input {
+          min-height: 44px;
+          min-width: 44px;
           width: 75%;
           padding: 4px;
           border: 0;
@@ -44,6 +46,8 @@ class SearchBar extends HTMLElement {
           font-weight: normal;
         }
         .search > button {
+          min-height: 44px;
+          min-width: 44px;
           width: auto;
           cursor: pointer;
           margin-left: auto;
