@@ -1,10 +1,11 @@
 class RestoItem extends HTMLElement {
-  set restaurant (restaurant) {
-    this._restaurant = restaurant
+  set content (content) {
+    this._content = content
     this.render()
   }
 
   render () {
+    const restaurant = this._content
     this.innerHTML = `
     <style>
       resto-item {
@@ -74,13 +75,13 @@ class RestoItem extends HTMLElement {
 
     </style>
     <div class="img-container">
-      <p class="resto-location">${this._restaurant.city}</p>
-      <img src="${this._restaurant.pictureId}" alt="${this._restaurant.name} image" class="resto-img">
+      <p class="resto-location">${restaurant.city}</p>
+      <img src="${restaurant.pictureId}" alt="${restaurant.name} image" class="resto-img">
     </div>
     <div aria-label="resto detail" class="resto-detail">
-      <p class="resto-name">${this._restaurant.name}</p>
-      <p class="resto-rating">Rating : ${this._restaurant.rating}</p>
-      <p class="resto-desc">${this._restaurant.description}</p>
+      <p class="resto-name">${restaurant.name}</p>
+      <p class="resto-rating">Rating : ${restaurant.rating}</p>
+      <p class="resto-desc">${restaurant.description}</p>
     </div>`
   }
 }

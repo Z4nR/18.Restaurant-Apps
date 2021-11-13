@@ -1,8 +1,10 @@
-import data from '../../DATA.json'
+import API_ENDPOINT from '../globals/api-endpoint'
 
 class DataSource {
-  static getRestoData () {
-    return data
+  static async getRestoData () {
+    const response = await fetch(API_ENDPOINT.RESTAURANTS)
+    const responseJson = await response.json()
+    return responseJson.results
   }
 
   static getSearchData (keyword) {

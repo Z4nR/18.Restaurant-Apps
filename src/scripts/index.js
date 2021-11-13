@@ -1,9 +1,20 @@
 import 'regenerator-runtime' /* for async await transpile */
-import './component/nav-drawer'
-import './component/resto-list'
-import './component/search'
+import './view/component/search'
 import '../styles/main.css'
 import '../styles/responsive.css'
-import main from './view/main'
+import App from './view/app'
 
-document.addEventListener('DOMContentLoaded', main)
+const app = new App({
+  button: document.querySelector('#menu'),
+  hero: document.querySelector('.hero'),
+  content: document.querySelector('main'),
+  drawer: document.querySelector('#drawer')
+})
+
+window.addEventListener('hashChange', () => {
+  app.renderPage()
+})
+
+window.addEventListener('load', () => {
+  app.renderPage()
+})
