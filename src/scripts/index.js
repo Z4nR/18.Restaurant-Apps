@@ -1,5 +1,4 @@
 import 'regenerator-runtime' /* for async await transpile */
-import './view/component/search'
 import '../styles/main.css'
 import '../styles/responsive.css'
 import App from './view/app'

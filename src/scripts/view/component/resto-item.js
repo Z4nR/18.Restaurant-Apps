@@ -76,7 +76,7 @@ class RestoItem extends HTMLElement {
     </style>
     <div class="img-container">
       <p class="resto-location">${restaurant.city}</p>
-      <img src="${restaurant.pictureId}" alt="${restaurant.name} image" class="resto-img">
+      <img src="${restaurant.pictureId ? CONFIG.BASE_IMAGE_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name} image" class="resto-img">
     </div>
     <div aria-label="resto detail" class="resto-detail">
       <p class="resto-name">${restaurant.name}</p>

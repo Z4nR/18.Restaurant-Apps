@@ -1,20 +1,15 @@
 class SearchBar extends HTMLElement {
-  constructor () {
-    super()
-    this.shadowDOM = this.attachShadow({ mode: 'open' })
-  }
-
   set clickEvent (event) {
     this._clickEvent = event
     this.render()
   }
 
   get value () {
-    return this.shadowDOM.querySelector('#searchElement').value
+    return this.querySelector('#searchElement').value
   }
 
   render () {
-    this.shadowDOM.innerHTML = `
+    this.innerHTML = `
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Rubik:wght@300&display=swap');
         :host {
@@ -69,7 +64,7 @@ class SearchBar extends HTMLElement {
         <input aria-label="Search Form" placeholder="Search Resto Name" id="searchElement" type="search">
         <button aria-label="Search Button" id="searchButtonElement" type="submit">Search</button>
       </div>`
-    this.shadowDOM.querySelector('#searchButtonElement').addEventListener('click', this._clickEvent)
+    this.querySelector('#searchButtonElement').addEventListener('click', this._clickEvent)
   }
 }
 
