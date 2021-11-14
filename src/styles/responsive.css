@@ -1,4 +1,4 @@
-resto-list {
+.resto-list {
     display: grid;
     grid-row-gap: 16px;
 }
@@ -80,7 +80,7 @@ resto-list {
 }
 
 @media screen and (min-width: 700px) {
-    resto-list {
+    .resto-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
@@ -110,7 +110,7 @@ resto-list {
         transition: 0.5s;
     }
 
-    resto-list {
+    .resto-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }

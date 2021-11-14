@@ -1,3 +1,5 @@
+import './component/resto-item'
+import './component/appbar'
 import routes from '../routes/routes'
 import UrlParser from '../routes/url-parser'
 import NavDrawerInit from '../utils/nav-drawer-init'

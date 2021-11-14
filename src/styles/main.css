@@ -45,7 +45,7 @@ header {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
-.header_container {
+header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -165,7 +165,7 @@ header {
 
 /* resto list container */
 
-resto-list {
+.resto-list {
     margin: 32px auto auto;
     text-align: left;
     overflow: auto;
