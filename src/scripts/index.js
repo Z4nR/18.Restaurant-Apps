@@ -11,7 +11,7 @@ const app = new App({
   drawer: document.querySelector('#drawer')
 })
 
-window.addEventListener('hashChange', () => {
+window.addEventListener('hashchange', () => {
   app.renderPage()
 })
 

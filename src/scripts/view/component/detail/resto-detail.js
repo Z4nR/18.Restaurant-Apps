@@ -7,11 +7,11 @@ class RestoDetail extends HTMLElement {
   }
 
   render () {
-    const detail = this._detail
+    const detail = this._detail.restaurant
     this.innerHTML = `
         <div class="detail-container>
             <h2 class="detail-name>${detail.name}</h3>
-            <img src="${detail.pictureId ? CONFIG.BASE_IMG_URL + detail.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name} image" class="detail-img">
+            <img src="${detail.pictureId ? CONFIG.BASE_IMG_URL + detail.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${detail.name} image" class="detail-img">
             <div class="resto-detail">
                 <h3>Restaurant Information</h3>
                 <h4>Address</h4>
