@@ -44,8 +44,12 @@ class RestoItem extends HTMLElement {
       .resto-name {
         font-weight: 500;
         font-size: 16px;
-        margin-top: 16px;
-        transition: 0.3s opacity;
+        margin: 16px 0;
+      }
+
+      .resto-name a {
+        color: #247291;
+        text-decoration: none;
       }
 
       .resto-rating {
@@ -81,8 +85,8 @@ class RestoItem extends HTMLElement {
       <img src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name} image" class="resto-img">
     </div>
     <div aria-label="resto detail" class="resto-detail">
-      <p class="resto-name">${restaurant.name}</p>
-      <p class="resto-rating">Rating : ${restaurant.rating}</p>
+      <p class="resto-name"><a href="${`/#/detail/${restaurant.id}`}">${restaurant.name}</a></p>
+      <p class="resto-rating">⭐️ ${restaurant.rating}</p>
       <p class="resto-desc">${restaurant.description}</p>
     </div>`
   }

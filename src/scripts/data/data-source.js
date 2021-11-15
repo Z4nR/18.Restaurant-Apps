@@ -7,18 +7,14 @@ class DataSource {
     return restaurants
   }
 
-  static getSearchData (keyword) {
-    return new Promise((resolve, reject) => {
-      const filterCafe = data.restaurants.filter(function (resto) {
-        return resto.name.toUpperCase().includes(keyword.toUpperCase())
-      })
+  static async getRestoDetail (id) {
+    const response = await fetch(API_ENDPOINT.DETAIL(id))
+    return response.json()
+  }
 
-      if (filterCafe.length) {
-        resolve(filterCafe)
-      } else {
-        reject(keyword + 'is not found')
-      }
-    })
+  static async getSearchData (keyword) {
+    const response = await fetch(API_ENDPOINT.SEARCH(keyword))
+    return response.json
   }
 }
 

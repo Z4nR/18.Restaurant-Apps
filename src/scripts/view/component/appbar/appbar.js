@@ -1,5 +1,3 @@
-import './search'
-
 class AppBar extends HTMLElement {
   connectedCallback () {
     this.render()
