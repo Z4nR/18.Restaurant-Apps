@@ -178,6 +178,11 @@ header-container {
     border-bottom: 1px solid #eeeeee;
 }
 
+.detail-box {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* resto list container */
 
 .resto-list {
@@ -281,4 +286,23 @@ footer i {
     padding: 1.3em;
     color: #fff;
     font-size: 14px;
+}
+
+/* like button */
+
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #247291;
+    color: #f8da5b;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
