@@ -3,6 +3,17 @@ import DataSource from '../../data/data-source'
 const Home = {
   async render () {
     return `
+        <section class="hero">
+            <div class="hero_inner">
+                <h1 class="hero_title">
+                    Lapar? Haus?
+                </h1>
+                <p class="hero_tag">
+                    Yuk cari tau tempat jajan yang enak dan asik buat kamu sendiri, bareng doi, atau rame-rame
+                </p>
+            </div>
+        </section>
+        <div class="main-container">
         <section class="content">
             <div class="resto_list">
                 <h1 class="explore_resto">Explore The Restaurant</h1>
@@ -26,7 +37,9 @@ const Home = {
                     </div>
                 </div>
             </div>
-        </section>`
+        </section>
+        </div>
+        `
   },
 
   async afterRender () {

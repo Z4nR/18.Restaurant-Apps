@@ -8,11 +8,10 @@ import UrlParser from '../routes/url-parser'
 import NavDrawerInit from '../utils/nav-drawer-init'
 
 class App {
-  constructor ({ button, drawer, content, hero }) {
+  constructor ({ button, drawer, content }) {
     this._button = button
     this._drawer = drawer
     this._content = content
-    this._hero = hero
 
     this._initialAppShell()
   }
@@ -21,8 +20,7 @@ class App {
     NavDrawerInit.init({
       button: this._button,
       drawer: this._drawer,
-      content: this._content,
-      hero: this._hero
+      content: this._content
     })
   }
 

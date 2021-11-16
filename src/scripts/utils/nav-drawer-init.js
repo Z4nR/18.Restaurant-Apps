@@ -7,10 +7,6 @@ const NavDrawerInit = {
     content.addEventListener('click', (event) => {
       this._closeDrawer(event, drawer)
     })
-
-    hero.addEventListener('click', (event) => {
-      this._closeDrawer(event, drawer)
-    })
   },
 
   _toggleDrawer (event, drawer) {
