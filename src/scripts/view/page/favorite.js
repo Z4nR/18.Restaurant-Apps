@@ -5,7 +5,7 @@ const Fav = {
     return `
         <section class="content">
             <div class="resto_list">
-                <h1 class="explore_resto">Explore The Restaurant</h1>
+                <h1 class="explore_resto">My Favorite Restaurant</h1>
                 <div class="resto-list" aria-label="Restaurants Item"></div>
             </div>
         </section>`

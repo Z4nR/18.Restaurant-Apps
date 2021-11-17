@@ -11,6 +11,7 @@ const LikeBtnInit = {
 
   async _renderButton () {
     const { id } = this._resto
+    console.log(id)
 
     if (await this._isRestoExist(id)) {
       this._renderUnFav()
