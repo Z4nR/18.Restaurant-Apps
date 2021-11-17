@@ -11,7 +11,7 @@ const Fav = {
         </section>`
   },
 
-  async afterRenderr () {
+  async afterRender () {
     const restaurants = await FavoriteRestoIdb.getAllResto()
     const restoContainer = document.querySelector('.resto-list')
     restaurants.forEach((restaurants) => {

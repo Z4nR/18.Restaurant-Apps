@@ -13,7 +13,7 @@ const LikeBtnInit = {
     const { id } = this._resto
     const exist = await this._isRestoExist(id)
     if (exist) {
-      this._renderFav() // ini fill bukan ? halo ? iya itu fill bang
+      this._renderFav()
     } else {
       this._renderUnFav()
     }
@@ -21,7 +21,6 @@ const LikeBtnInit = {
 
   async _isRestoExist (id) {
     const resto = await FavoriteRestoIdb.getResto(id)
-    console.log(resto)
     return resto != null
   },
 
