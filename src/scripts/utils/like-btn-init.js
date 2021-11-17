@@ -27,6 +27,8 @@ const LikeBtnInit = {
   _renderFav () {
     const likeButton = document.createElement('like-btn')
     likeButton.like = true
+
+    this._likeBtnBox.innerHTML = ''
     this._likeBtnBox.appendChild(likeButton)
 
     const likeBtn = document.querySelector('#like')
@@ -39,6 +41,8 @@ const LikeBtnInit = {
   _renderUnFav () {
     const likeButton = document.createElement('like-btn')
     likeButton.like = false
+
+    this._likeBtnBox.innerHTML = ''
     this._likeBtnBox.appendChild(likeButton)
 
     const likeBtn = document.querySelector('#like')
