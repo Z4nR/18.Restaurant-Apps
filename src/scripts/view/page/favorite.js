@@ -1,4 +1,4 @@
-import DataSource from '../../data/data-source'
+import FavoriteRestoIdb from '../../data/favdatabase'
 
 const Fav = {
   async render () {
@@ -12,7 +12,7 @@ const Fav = {
   },
 
   async afterRenderr () {
-    const restaurants = await DataSource.getRestoData()
+    const restaurants = await FavoriteRestoIdb.getAllResto()
     const restoContainer = document.querySelector('.resto-list')
     restaurants.forEach((restaurants) => {
       const restoItems = document.createElement('resto-item')

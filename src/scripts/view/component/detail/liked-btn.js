@@ -1,7 +1,7 @@
 class LikedBtn extends HTMLElement {
   set like (liked) {
     this._like = liked
-    this._render()
+    this.render()
   }
 
   get like () {
@@ -10,7 +10,7 @@ class LikedBtn extends HTMLElement {
 
   render () {
     const like = this._like
-    const aria = !liked ? 'add restaurant to favorite' : 'remove restaurant from favorite'
+    const aria = !like ? 'add restaurant to favorite' : 'remove restaurant from favorite'
 
     this.innerHTML = `
         <button aria-label="${aria}" id="like" class="like">

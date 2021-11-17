@@ -11,36 +11,40 @@ const LikeBtnInit = {
 
   async _renderButton () {
     const { id } = this._resto
-    console.log(id)
-
-    if (await this._isRestoExist(id)) {
-      this._renderUnFav()
+    const exist = await this._isRestoExist(id)
+    if (exist) {
+      this._renderFav() // ini fill bukan ? halo ? iya itu fill bang
     } else {
-      this._renderFav()
+      this._renderUnFav()
     }
   },
 
   async _isRestoExist (id) {
     const resto = await FavoriteRestoIdb.getResto(id)
-    return !!resto
+    console.log(resto)
+    return resto != null
   },
 
   _renderFav () {
-    this._likeBtnBox.innerHTML = '<like-btn></like-btn>'
+    const likeButton = document.createElement('like-btn')
+    likeButton.like = true
+    this._likeBtnBox.appendChild(likeButton)
 
     const likeBtn = document.querySelector('#like')
     likeBtn.addEventListener('click', async () => {
-      await FavoriteRestoIdb.putResto(this._resto)
+      await FavoriteRestoIdb.deleteResto(this._resto.id)
       this._renderButton()
     })
   },
 
   _renderUnFav () {
-    this._likeBtnBox.innerHTML = '<like-btn></like-btn>'
+    const likeButton = document.createElement('like-btn')
+    likeButton.like = false
+    this._likeBtnBox.appendChild(likeButton)
 
     const likeBtn = document.querySelector('#like')
     likeBtn.addEventListener('click', async () => {
-      await FavoriteRestoIdb.deleteResto(this._resto)
+      await FavoriteRestoIdb.putResto(this._resto)
       this._renderButton()
     })
   }

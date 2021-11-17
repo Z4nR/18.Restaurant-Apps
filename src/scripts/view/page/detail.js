@@ -31,14 +31,7 @@ const Detail = {
     const likeButton = document.querySelector('.like-box')
     LikeBtnInit.init({
       likeBtnBox: likeButton,
-      restoDetail: {
-        id: restoDetail.id,
-        name: restoDetail.name,
-        pictureId: restoDetail.pictureId,
-        rating: restoDetail.rating,
-        description: restoDetail.description,
-        city: restoDetail.city
-      }
+      resto: restoDetail.restaurant
     })
   }
 }

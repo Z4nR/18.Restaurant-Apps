@@ -19,7 +19,7 @@ const FavoriteRestoIdb = {
   },
 
   async putResto (resto) {
-    return (await dbPromise).put(OBJECT_STORE_NAME)
+    return (await dbPromise).put(OBJECT_STORE_NAME, resto)
   },
 
   async deleteResto (id) {
