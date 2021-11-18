@@ -8,14 +8,9 @@ class SearchBar extends HTMLElement {
     this.render()
   }
 
-  get value () {
-    return this.querySelector('#searchElement').value
-  }
-
   render () {
     this.innerHTML = `
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Rubik:wght@300&display=swap');
         :host {
           display: block;
           width: auto;
@@ -31,7 +26,7 @@ class SearchBar extends HTMLElement {
         .search > input {
           min-height: 44px;
           min-width: 44px;
-          width: 75%;
+          width: 60%;
           padding: 4px;
           border: 0;
           border-bottom: 1px solid #f8da5b;
@@ -52,9 +47,12 @@ class SearchBar extends HTMLElement {
           margin-left: auto;
           padding: 4px;
           background-color: #f8da5b;
-          color: #247291;
-          border-radius: 3px;
           border: 0;
+        }
+        .search a {
+          color: #247291;
+          text-decoration: none;
+          text-align: center;
         }
 
         @media screen and (min-width: 520px) {
@@ -66,7 +64,7 @@ class SearchBar extends HTMLElement {
       </style>
       <div class="search">
         <input aria-label="Search Form" placeholder="Search Resto Name" id="searchElement" type="search">
-        <button aria-label="Search Button" id="searchButtonElement" type="submit">Search</button>
+        <button aria-label="Search Button" id="searchButtonElement" type="submit"><a href="#/search">Search</a></button>
       </div>`
     this.querySelector('#searchButtonElement').addEventListener('click', this._clickEvent)
   }

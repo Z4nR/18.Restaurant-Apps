@@ -6,6 +6,10 @@ class RestoItem extends HTMLElement {
     this.render()
   }
 
+  get value () {
+    return this.querySelector('#searchElement').value
+  }
+
   render () {
     const restaurant = this._content
     this.innerHTML = `

@@ -12,8 +12,8 @@ class DataSource {
     return response.json()
   }
 
-  static async getSearchData (keyword) {
-    const response = await fetch(API_ENDPOINT.SEARCH(keyword))
+  static async getSearchData (name) {
+    const response = await fetch(API_ENDPOINT.SEARCH(name))
     return response.json
   }
 }
