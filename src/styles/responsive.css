@@ -47,6 +47,7 @@
 
     .nav_item a {
         color: #247291;
+        text-decoration: none;
     }
 }
 

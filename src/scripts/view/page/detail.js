@@ -3,6 +3,7 @@ import UrlParser from '../../routes/url-parser'
 import LikeBtnInit from '../../utils/like-btn-init'
 import '../component/detail/resto-detail'
 import '../component/detail/resto-menu'
+import '../component/detail/resto-review'
 
 const Detail = {
   async render () {
@@ -25,8 +26,12 @@ const Detail = {
     restoMenu.classList.add('resto-menu-container')
     restoMenu.menu = restoDetail.restaurant.menus
 
+    const restoReview = document.createElement('resto-review')
+    restoReview.reviewer = restoDetail.restaurant.customerReviews
+
     detailContainer.appendChild(detailItem)
     detailContainer.appendChild(restoMenu)
+    detailContainer.appendChild(restoReview)
 
     const likeButton = document.querySelector('.like-box')
     LikeBtnInit.init({
