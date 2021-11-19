@@ -185,7 +185,7 @@ header-container {
 
 /* resto list container */
 
-.resto-list, search-list {
+.resto-list {
     margin: 32px auto auto;
     text-align: left;
     overflow: auto;

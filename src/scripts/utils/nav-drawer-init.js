@@ -1,5 +1,5 @@
 const NavDrawerInit = {
-  init ({ button, drawer, content, hero }) {
+  init ({ button, drawer, content }) {
     button.addEventListener('click', (event) => {
       this._toggleDrawer(event, drawer)
     })

@@ -32,7 +32,8 @@ class RestoMenu extends HTMLElement {
         font-weight: 400;
       }
       ul {
-        padding: 15px;
+        padding-top: 5px;
+        padding-bottom: 10px;
         list-style-type: none;
         font-size: 15px;
         font-weight: lighter;

@@ -28,10 +28,11 @@ class RestoReview extends HTMLElement {
         h1 {
             text-align: center;
             font-weight: 400;
+            margin-bottom: 10px;
         }
         .review {
             margin-bottom: 10px;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #E0E0E0;
         }
         .name {
             font-size: 15px;

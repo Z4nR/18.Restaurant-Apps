@@ -58,6 +58,10 @@ class SearchBar extends HTMLElement {
           text-decoration: none;
           text-align: center;
         }
+        .search a:hover {
+          color: #247291;
+          text-decoration: none;
+        }
 
         @media screen and (min-width: 520px) {
           .search {
