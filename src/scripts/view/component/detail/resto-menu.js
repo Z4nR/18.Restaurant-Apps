@@ -31,7 +31,7 @@ class RestoMenu extends HTMLElement {
         text-align: center;
         font-weight: 400;
       }
-      ul {
+      .list {
         padding-top: 5px;
         padding-bottom: 10px;
         list-style-type: none;
@@ -52,11 +52,11 @@ class RestoMenu extends HTMLElement {
     <div class="menu">
       <div class="foods">
         <h1>Foods</h1>
-        <ul>${_foods}</ul>
+        <ul class="list">${_foods}</ul>
       </div>
       <div class="drinks">
         <h1>Drinks</h1>
-        <ul>${_drinks}</ul>
+        <ul class="list">${_drinks}</ul>
       </div>
     </div>
     `

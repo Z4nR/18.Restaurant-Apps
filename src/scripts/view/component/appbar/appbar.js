@@ -21,7 +21,7 @@ class AppBar extends HTMLElement {
         </nav>
 
         <div class="hamburger-container">
-            <a aria-label="Hamburger Anchor" href="#" id="menu" class="header_menu">☰</a>
+            <div aria-label="Hamburger Anchor" id="menu" class="header_menu">☰</div>
         </div>`
   }
 }
