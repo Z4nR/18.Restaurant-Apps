@@ -1,4 +1,4 @@
-.resto-list {
+.resto-list, search-list {
     display: grid;
     grid-row-gap: 16px;
 }
@@ -81,7 +81,7 @@
 }
 
 @media screen and (min-width: 700px) {
-    .resto-list {
+    .resto-list, search-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 10px;
@@ -111,14 +111,14 @@
         transition: 0.5s;
     }
 
-    .resto-list {
+    .resto-list, search-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .main-container {
+    .main-container, .content-find{
         max-width: 1200px;
         margin: 0 auto;
     }

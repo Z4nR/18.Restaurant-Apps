@@ -1,35 +1,33 @@
-import SearchInit from '../../utils/search-init'
-import '../component/appbar/search'
+import DataSource from '../../data/data-source'
+import '../component/search/search'
+import '../component/search/search-list'
 
 const Search = {
   async render () {
     return `
-        <section class="content">
+        <section class="content content-find">
             <div class="resto_list">
                 <h1 class="explore_resto">Find Some Restaurant</h1>
-                <div class="resto-list" aria-label="Restaurants Item"></div>
+                <search-box aria-label="Search Resto name Box"></search-box>
+                <search-list aria-label="Restaurants Item"></search-list>
             </div>
         </section>`
   },
 
   async afterRender () {
-    const restoContainer = document.querySelector('.resto-list')
+    const searchInput = document.querySelector('search-box')
+    const restoContainer = document.querySelector('search-list')
 
     const searchResult = result => {
-      restoContainer.value = result
+      restoContainer.searchResto = result
     }
 
-    const searchInput = document.querySelector('search-box')
-    const searchValue = searchInput.value
+    const onButtonSearchClicked = async () => {
+      const result = await DataSource.getSearchData(searchInput.value)
+      searchResult(result)
+    }
 
-    const searchBtn = document.querySelector('search-box')
-    const searchBtnClick = searchBtn.clickEvent
-
-    SearchInit.init({
-      search: searchValue,
-      result: searchResult,
-      btn: searchBtnClick
-    })
+    searchInput.clickEvent = onButtonSearchClicked
   }
 }
 
