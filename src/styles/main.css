@@ -71,9 +71,13 @@ header-container {
 }
 
 .header_menu {
-    font-size: 32px;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 35px;
     text-decoration: none;
     color: #f8da5b;
+    background-color: #247291;
+    border: 0;
 }
 
 .nav_list {

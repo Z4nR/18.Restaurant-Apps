@@ -44,10 +44,11 @@ class RestoItem extends HTMLElement {
       .resto-name {
         font-weight: 500;
         font-size: 16px;
-        margin: 16px 0;
+        padding: 1.3em 1.3em 1.3em 0;
       }
 
       .resto-name a {
+        padding: 1.3em 1.3em 1.3em 0;
         color: #247291;
         text-decoration: none;
       }
