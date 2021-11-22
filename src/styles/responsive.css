@@ -20,7 +20,7 @@
         background-color: #fff;
         width: 300px;
         position: absolute;
-        left: 0px;
+        left: 0;
 
         /* This trasform moves the drawer off canvas. */
         -webkit-transform: translate(-320px, 0);
