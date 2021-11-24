@@ -24,10 +24,10 @@ const Detail = {
 
     const restoMenu = document.createElement('resto-menu')
     restoMenu.classList.add('resto-menu-container')
-    restoMenu.menu = restoDetail.restaurant.menus
+    restoMenu.menu = restoDetail.menus
 
     const restoReview = document.createElement('resto-review')
-    restoReview.reviewer = restoDetail.restaurant.customerReviews
+    restoReview.reviewer = restoDetail.customerReviews
 
     detailContainer.appendChild(detailItem)
     detailContainer.appendChild(restoMenu)
@@ -36,8 +36,10 @@ const Detail = {
     const likeButton = document.querySelector('.like-box')
     LikeBtnInit.init({
       likeBtnBox: likeButton,
-      resto: restoDetail.restaurant
+      resto: restoDetail
     })
+
+    console.log(restoDetail)
   }
 }
 

@@ -3,7 +3,6 @@ import '../resto-item'
 class searchsList extends HTMLElement {
   set searchResto (resto) {
     this._searchResto = resto
-    console.log(resto)
     this.render()
   }
 

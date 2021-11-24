@@ -7,7 +7,7 @@ class RestoDetail extends HTMLElement {
   }
 
   render () {
-    const detail = this._detail.restaurant
+    const detail = this._detail
     const category = detail.categories
     let cat = ''
     category.forEach((category) => {
