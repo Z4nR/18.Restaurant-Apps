@@ -13,9 +13,9 @@ const LikeBtnInit = {
     const { id } = this._resto
     const exist = await this._isRestoExist(id)
     if (exist) {
-      this._renderFav()
-    } else {
       this._renderUnFav()
+    } else {
+      this._renderFav()
     }
   },
 
@@ -24,7 +24,7 @@ const LikeBtnInit = {
     return resto != null
   },
 
-  _renderFav () {
+  _renderUnFav () {
     const likeButton = document.createElement('like-btn')
     likeButton.like = true
 
@@ -38,7 +38,7 @@ const LikeBtnInit = {
     })
   },
 
-  _renderUnFav () {
+  _renderFav () {
     const likeButton = document.createElement('like-btn')
     likeButton.like = false
 

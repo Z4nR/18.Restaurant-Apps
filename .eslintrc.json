@@ -15,6 +15,7 @@
         "accessor-pairs": "off",
         "no-async-promise-executor": "off",
         "prefer-promise-reject-errors": "off",
-        "no-return-assign": "off"
+        "no-return-assign": "off",
+        "no-prototype-builtins": "off"
     }
 }
