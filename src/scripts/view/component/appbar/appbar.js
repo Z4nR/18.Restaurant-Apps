@@ -13,10 +13,10 @@ class AppBar extends HTMLElement {
 
         <nav id="drawer" class="nav">
              <ul class="nav_list">
-                <li class="nav_item"><a href="#/home">Home</a></li>
-                <li class="nav_item"><a href="#/fav">Favorite</a></li>
-                <li class="nav_item"><a href="#/search">Search</a></li>
-                <li class="nav_item"><a href="https://www.instagram.com/_zul_zulham_/">About Us</a></li>
+                <li class="nav_item" aria-label="Home"><a href="#/home">Home</a></li>
+                <li class="nav_item" aria-label="Favorite"><a href="#/fav">Favorite</a></li>
+                <li class="nav_item" aria-label="Search"><a href="#/search">Search</a></li>
+                <li class="nav_item" aria-label="About Us"><a href="https://www.instagram.com/_zul_zulham_/">About Us</a></li>
             </ul>
         </nav>
 
