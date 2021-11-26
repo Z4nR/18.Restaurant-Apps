@@ -1,6 +1,7 @@
 import DataSource from '../../data/data-source'
+import FavoriteRestoIdb from '../../data/favdatabase'
 import UrlParser from '../../routes/url-parser'
-import LikeBtnInit from '../../utils/like-btn-init'
+import LikeBtnInit from '../../utils/like-btn-presenter'
 import '../component/detail/resto-detail'
 import '../component/detail/resto-menu'
 import '../component/detail/resto-review'
@@ -36,10 +37,9 @@ const Detail = {
     const likeButton = document.querySelector('.like-box')
     LikeBtnInit.init({
       likeBtnBox: likeButton,
-      resto: restoDetail
+      resto: restoDetail,
+      idb: FavoriteRestoIdb
     })
-
-    console.log(restoDetail)
   }
 }
 
