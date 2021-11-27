@@ -26,7 +26,7 @@ describe('Liking A Resto', () => {
 
   it('should be able to like the resto', async () => {
     await testFactories.createLikeBtnElement({ id: 1 })
-    document.querySelector('like-btn').dispatchEvent(new Event('click'))
+    document.querySelector('#like').dispatchEvent(new Event('click'))
     const resto = await FavoriteRestoIdb.getResto(1)
     expect(resto).toEqual({ id: 1 })
     FavoriteRestoIdb.deleteResto(1)
