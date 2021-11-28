@@ -4,6 +4,10 @@
 }
 
 @media screen and (max-width: 519px) {
+    .hero {
+        background-image: url('../public/images/heros/hero-image_2-small.jpg');
+    }
+
     .header_title {
         font-weight: 100;
         font-size: 1.5em;
@@ -67,6 +71,10 @@
     }
     
     .nav {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -93,6 +101,13 @@
     .nav_list {
         max-width: 800px;
         margin: auto 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 899px){
+    .about_us_figure .img {
+        min-height: 400px;
+        background-image: url('../public/images/heros/hero-image_1-small.jpg');
     }
 }
 

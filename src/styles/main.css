@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
     padding: 0;
@@ -115,7 +116,7 @@ header-container {
     margin-top: 10px;
     text-align: center;
     background-blend-mode: soft-light;
-    background: url('../public/images/heros/hero-image_2.jpg') rgb(73, 73, 73) no-repeat center/cover;
+    background: url('../public/images/heros/hero-image_2-large.jpg') rgb(73, 73, 73) no-repeat center/cover;
     cursor: pointer;
 }
 
@@ -227,9 +228,12 @@ header-container {
     padding: 16px 32px;
 }
 
-.about_us_figure img {
+.about_us_figure .img {
     width: 100%;
+    min-height: 300px;
+    height: 100%;
     border-radius: 5px;
+    background: url('../public/images/heros/hero-image_1-large.jpg') no-repeat center/cover;
 }
 
 .about_us_figure figcaption {

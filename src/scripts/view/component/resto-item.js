@@ -83,7 +83,7 @@ class RestoItem extends HTMLElement {
     </style>
     <div class="img-container">
       <p class="resto-location">${restaurant.city}</p>
-      <img src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name} image" class="resto-img lazyload">
+      <img data-src="${restaurant.pictureId ? CONFIG.BASE_IMG_URL + restaurant.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="${restaurant.name} image" class="resto-img lazyload">
     </div>
     <div aria-label="resto detail" class="resto-detail">
       <p class="resto-name"><a href="${`/#/detail/${restaurant.id}`}">${restaurant.name}</a></p>

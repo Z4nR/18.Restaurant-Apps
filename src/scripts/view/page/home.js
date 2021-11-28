@@ -25,7 +25,7 @@ const Home = {
                 <h1 class="about-us-teks">About Us</h1>
                 <div class="about-content">
                     <figure class="about_us_figure">
-                        <img class="lazyload" src="../public/images/heros/hero-image_1.jpg" alt="Chef Image">
+                        <div class="img" alt="Chef Image"></div>
                         <figcaption>Info : Chef made delicious food</figcaption>
                     </figure>
                     <div class="about_us_content">
