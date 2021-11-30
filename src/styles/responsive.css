@@ -107,7 +107,7 @@
 @media screen and (max-width: 899px){
     .about_us_figure .img {
         min-height: 400px;
-        background-image: url('../public/images/heros/hero-image_1-small.jpg');
+        background-image: url('../public/images/heros/hero-image_1-large.jpg');
     }
 }
 
